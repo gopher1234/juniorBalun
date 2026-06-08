@@ -20,7 +20,7 @@ var Commit = func() string {
 
 func debugInfo(w http.ResponseWriter, req *http.Request) {
 
-	fmt.Println(Commit)
+	fmt.Fprintln(w, Commit)
 }
 
 func main() {
